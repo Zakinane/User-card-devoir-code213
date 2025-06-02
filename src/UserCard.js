@@ -20,24 +20,24 @@ function UserCard({ name, age, role }) {
   const color = (role) => {
     switch (role) {
       case "STUDENT":
-        return "#5FA5FA";
+        return "#69CAFA";
       case "TEACHER":
-        return "#3EAB3E";
+        return "#83F2B5";
       default:
-        return "#828282";
+        return "#8A8A8A";
     }
   };
   return (
     <div
       className="UserCard"
       style={{
-        background: `linear-gradient(312deg, ${color(role)} 0%, #1C20F3 100%)`,
+        background: `linear-gradient(312deg, ${color(role)} 30%, #1C20F3 100%)`,
       }}
     >
       <div className="uni">
         <img src={code213} alt="" />
       </div>
-      <div className="cardName">{role} CARD</div>
+      <div className="cardName">{role} ID CARD</div>
       <div className="person">
         <div className="info">
           <b>
