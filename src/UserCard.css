@@ -1,0 +1,50 @@
+.UserCard {
+  width: 700px;
+  height: 400px;
+  color: white;
+  display: grid;
+  padding: 30px;
+  border-radius: 20px;
+  align-items: center;
+  grid-template-columns: 300px 400px;
+  grid-template-rows: 100px 200px 100px;
+  grid-template-areas:
+    "uni cardName"
+    ". person"
+    "country .";
+}
+.uni {
+  grid-area: uni;
+  overflow: hidden;
+  max-height: 100px;
+  img {
+    border-radius: 20px;
+    height: 100px;
+  }
+}
+.cardName {
+  grid-area: cardName;
+  justify-self: flex-end;
+  font-size: 3em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.person {
+  grid-area: person;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  img{
+    border-radius: 10px;
+    height: 200px;
+  }
+}
+.country {
+  grid-area: country;
+  img {
+    height: 100px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: rgba(240, 248, 255, 0.15);
+  }
+}
